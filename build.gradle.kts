@@ -14,9 +14,11 @@ val jUnitVersion = "5.12.2"
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.12.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlinVersion")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$jUnitVersion")
+    testImplementation("org.assertj:assertj-core:3.27.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlinVersion")
     testImplementation("io.mockk:mockk:1.14.2")
     testImplementation(kotlin("test"))
 }
